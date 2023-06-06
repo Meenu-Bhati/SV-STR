@@ -50,7 +50,7 @@ rule filter_call:
         ENV + "/py2.yaml"
     shell:
         """
-        python /cluster/work/pausch/meenu/SV/SV/STR_scripts/Hipstr_on_76_124samples/Filter_STR.py  --vcf {input.vcf} \
+        python Filter_STR.py  --vcf {input.vcf} \
         --min-call-qual 0.8 \
         --max-call-flank-indel  0.20 \
         --min-loc-depth 5  \
@@ -67,7 +67,7 @@ rule concat_vcf:
         """
         module load htslib/1.12
         
-        /cluster/work/pausch/meenu/tools/bcftools-1.8/bcftools concat -o {output[0]} -Oz {input.calls}
+        bcftools concat -o {output[0]} -Oz {input.calls}
         
         tabix -p vcf {output[0]}
         
