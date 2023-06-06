@@ -1,0 +1,7 @@
+resources:
+    data: '/cluster/work/SV/data/'
+    ref:  '/cluster/work/SV/ref/BTA/UCD1.2/'
+    env:  '/cluster/work/SV/Smmove_SV/'
+    samples: '/cluster/work/SV/Smmove_SV/Bam_id_183'
+foldout:
+    out: '/cluster/work/smoove_output/'
