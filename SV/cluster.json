@@ -1,0 +1,47 @@
+## cluster configuration has been deprecated by the introduction of Profiles new snakemake 
+
+{
+    "__default__" :
+    {
+        "ncore" : 2,
+        "memo" : 10000,
+        "scratch_mem": 10000,
+        "jobtime" : "4:00",
+        "jobname" : "{rule}"
+    },
+
+    "smoove_call" :
+    {
+        "ncore" : 1,
+        "memo" : 30000,
+        "scratch_mem": 60000,
+        "jobtime" : "23:59",        
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.sample}.log"
+
+    },
+    "smoove_merge" :
+    {
+        "jobname" : "{rule}",
+        "logi" : "loglsf/{rule}.log"
+    },
+    
+    "smoove_genotype" :
+    {
+        "ncore" : 1,
+        "memo" : 30000,
+        "scratch_mem": 60000,
+        "jobtime" : "23:59",        
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.sample}.log"
+    },
+    
+    "smoove_paste" :
+    {
+        "jobname" : "{rule}",
+        "logi" : "loglsf/{rule}.log"
+    }
+    
+    
+    
+}
