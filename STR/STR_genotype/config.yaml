@@ -1,0 +1,15 @@
+path:
+    ref : '/cluster/work/pausch/inputs/ref/BTA/UCD1.2/ARS-UCD1.2_Btau5.0.1Y.fa' 
+    ref_str: '/cluster/work/pausch/meenu/SV/STR/fixed_ref_trf/'
+    output : '/cluster/work/pausch/meenu/SV/STR/Result_183/'
+    ##outfilter : '/cluster/work/pausch/meenu/SV/STR/Result_183/Filter_call'
+    outfilter : '/cluster/work/pausch/meenu/SV/STR/Result_183/Filter_call_lessstrict'
+    bamfiles: '/cluster/work/pausch/meenu/SV/Data_76_124/'
+
+tools:
+    hipstr: '/cluster/work/pausch/meenu/SV/tools/HipSTR/HipSTR '
+    env: '/cluster/work/pausch/meenu/SV/SV/STR_scripts/Hipstr_on_76_124samples'
+    script: '/cluster/work/pausch/meenu/SV/SV/STR_scripts/Hipstr_on_76_124samples/Filter_STR.py'
+    vepimage: '/cluster/work/pausch/meenu/SV/images/ensembl-vep_latest.sif ' 
+    bcftools: '/cluster/work/pausch/meenu/tools/bcftools-1.8/bcftools'
+    

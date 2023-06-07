@@ -1,0 +1,21 @@
+{
+    "__default__" :
+    {
+        "ncore" : 10,
+        "memo" : 1000,
+        "scratch_mem": 1000,
+        "jobtime" : "4:00",
+        "jobname" : "{rule}",
+        "logi" : "log_folder/{rule}.log"
+    },
+    "hipstr_run" :
+    {
+        "ncore" : 30,
+        "memo" : 1000,
+        "scratch_mem": 1000,
+        "jobtime" : "23:59",
+        "jobname" : "{rule}_{wildcards.chr}",
+        "logi" : "log_folder/{rule}_{wildcards.chr}.log"
+    }
+
+}
