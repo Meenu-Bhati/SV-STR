@@ -1,0 +1,21 @@
+{
+    "__default__" :
+    {
+        "ncore" : 10,
+        "memo" : 1000,
+        "scratch_mem": 1000,
+        "jobtime" : "4:00",
+        "jobname" : "{rule}_{wildcards.assembly}",
+        "logi" : "log_folder/{rule}_{wildcards.assembly}"
+    },
+    "fix_trfout" :
+    {
+        "ncore" : 1,
+        "memo" : 1000,
+        "scratch_mem": 1000,
+        "jobtime" : "00:59",
+        "jobname" : "{rule}",
+        "logi" : "log_folder/{rule}_{wildcards.assembly}"
+    }
+
+}
