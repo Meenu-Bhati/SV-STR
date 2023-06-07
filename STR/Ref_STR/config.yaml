@@ -1,10 +1,12 @@
 path:
-    assembly_path : '/cluster/work/pausch/meenu/SV/genome/New_Assemblies'
-    output_path   : '/cluster/work/pausch/meenu/SV/STR'
+    assembly_path : '/cluster/work/genome/Assemblies'
+    output_path   : '/cluster/work/STR'
     
 tools:
     bedtools: 'module load bedtools2/2.30.0 '
-    trf:      '/cluster/work/pausch/meenu/SV/tools/TRF/src/trf '
-    fix_trf: '/cluster/work/pausch/meenu/SV/SV/STR_scripts/Ref_STR_snake/fix_trf_output.py'
+    trf:      '/cluster/work/tools/TRF/src/trf '
+    fix_trf: '/cluster/work/Ref_STR/fix_trf_output.py'
 
-assemblies :  ['BSWCHEM120151536851_hifiasmv152','BSWCHEF120152514636_hifiasmv152','BSWCHEM120151536851_shastamerfintigs','BSWCHEF120152514636_shastamerfintigs']
+assemblies :  ['ARS_UCD1.2','xxxx_hifiasmv152']
+
+## please download tandem repeat finder and change all the path to your own dir or tools path
