@@ -7,6 +7,4 @@ Make sure to update the file path accordingly.
 
 ### 2. Prepare Covariates
 
- use [Covariates](https://github.com/Meenu-Bhati/SV-STR/blob/main/RNA_quantification/Covariates/) from eQTL analyses and just replace expression (TPM) file with final outout of above script (leafcutter output)
-
- 
+use same [Covariates](https://github.com/Meenu-Bhati/SV-STR/blob/main/RNA_quantification/Covariates/) from eQTL analyses and substitute the expression (TPM) file with the final output from the preceding script (leafcutter output), along with the PCA generated using leafcutter.
