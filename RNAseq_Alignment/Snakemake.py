@@ -214,7 +214,7 @@ rule wasp_unique:
         
         module load python
         
-        python  /cluster/work/pausch/meenu/SV/SV/RNAExpression/sQTL/Filter_wasp_unique.py {input.BAM} {output.BAM}
+        python  Filter_wasp_unique.py {input.BAM} {output.BAM}
         
 
         """
