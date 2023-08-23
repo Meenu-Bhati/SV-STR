@@ -14,7 +14,7 @@ Rscript run_peer.r FINAL_gene_TPM_filter_quan_inv_allgenes.bed.gz prefix 10
 ```
 ## script combine all the covriates in one file and further check and visualize variance explained by each covarites
 
-Rscript Check_and_merge_covriates
+Rscript Check_and_merge_covriates.r
 
 ```
 
