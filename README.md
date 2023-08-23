@@ -3,6 +3,5 @@
 
 This repository contains multiple workflows and scripts pertaining to the identification and genotyping of Structural Variations (SVs) and Short Tandem Repeats (STRs) through the utilization of short-read sequencing data. Additionally, the repository includes scripts and workflows for e/s QTL discovery using SVs and STRs.
 
-
-
+Each folder contains information detailing every step for particluar category.
 
