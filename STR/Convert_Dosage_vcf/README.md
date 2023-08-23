@@ -53,7 +53,7 @@ python Count_genotype.py <path_str_file>  str_DS_alt_minGT.vcf.gz  prefix_output
 #1	220167	75	7
 #1	220373	75	0
 
-## Keep only sites high sites 
+## filter STR vcf
 awk -v OFS="\t" '{ print $1,$2}' filter_pos_keep.txt > postion.txt
 
 bcftools view --regions-file postion.txt -O z -o STR_final.vcf.gz  str_DS_alt_minGT.vcf.gz
