@@ -6,7 +6,7 @@ This repository contains multiple workflows and scripts pertaining to the identi
 After installing Snakemake and the necessary tools, you can execute all Snakemake workflows by utilizing the "submit***.sh" file in each respective folder. Remember to modify the paths as needed before running the workflows/scripts.
 
 For DNA sequence alignment workflow, please refer 
-[Audald's DNA alignement workflows](https://github.com/AnimalGenomicsETH/Reference_assembly_choice/tree/master/Alignment) which is part of our previous publication. "Lloret-Villas, A., Bhati, M., Kadri, N.K. et al. Investigating the impact of reference assembly choice on genomic analyses in a cattle breed. BMC Genomics 22, 363 (2021). https://doi.org/10.1186/s12864-021-07554-w"
+[Audald's DNA alignement workflow](https://github.com/AnimalGenomicsETH/Reference_assembly_choice/tree/master/Alignment) which is part of our previous publication. "Lloret-Villas, A., Bhati, M., Kadri, N.K. et al. Investigating the impact of reference assembly choice on genomic analyses in a cattle breed. BMC Genomics 22, 363 (2021). https://doi.org/10.1186/s12864-021-07554-w"
 
 
  
