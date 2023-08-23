@@ -21,7 +21,7 @@ ${qtltools}  cis --vcf ${vcf_file} --bed ${expr} \
 
 
 
-### 2. Permutation
+### 2. Permutation eQTL
 
 
 qtltools=/cluster/work/pausch/alex/software/qtltools/bin/QTLtools
@@ -53,7 +53,7 @@ ${out_perm}/joint_str_sv_perm_fdr > log_rscript_perm
 
 
 
-### 3. Conditional
+### 3. Conditional eQTL
 
 
 out_condi="conditional"
