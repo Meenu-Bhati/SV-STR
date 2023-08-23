@@ -17,6 +17,7 @@ try:
     path = sys.argv[1]
     filename = sys.argv[2]
     prefix = sys.argv[3]
+    indi = sys.argv[4]
 except:
     sys.exit()
 
@@ -50,7 +51,7 @@ for line in file:
             actual_set=set(counts)
             ans=set(actual_set)-unwanted_set
             miss=fgts.count(".")
-            if len(ans) > 1 and miss < 15:
+            if len(ans) > 1 and miss < indi :
                 Keep_pos[mypos] = genotype_count
 
 ## keep pos is to keep those position where DS is atleast 2 genotypes other than .
