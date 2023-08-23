@@ -1,1 +1,1 @@
-## smoove workflow of Structural variants genotyping 
+## Workflow for Genotyping Structural Variants Using Smoove
