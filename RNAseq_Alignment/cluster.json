@@ -1,0 +1,112 @@
+{
+    "fastp" :
+    {
+        "ncore" : 6,
+        "memo" : 6000,
+        "scratch_mem": 1000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "multiqc":
+    {
+        "ncore" : 1,
+        "memo" : 500,
+        "scratch_mem": 1000,
+        "jobtime" : "00:59",
+        "jobname" : "{rule}",
+        "logi" : "log_folder_new/{rule}.log"
+    },
+    "split_fastq" :
+    {
+        "ncore" : 6,
+        "memo" : 3500,
+        "scratch_mem": 2000,
+        "jobtime" : "23:50",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "Star" :
+    {
+        "ncore" : 15,
+        "memo" : 7000,
+        "scratch_mem": 7000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}_{wildcards.flowcell}_{wildcards.lane}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}_{wildcards.flowcell}_{wildcards.lane}.log"
+    },
+    "sambamba_merge" :
+    {
+        "ncore" : 6,
+        "memo" : 3000,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "sambamba_flagstat_1" :
+    {
+        "ncore" : 3,
+        "memo" : 4000,
+        "scratch_mem": 1000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "mark_duplicates" :
+    {
+        "ncore" : 6,
+        "memo" : 7500,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "build_index" :
+    {
+        "ncore" : 6,
+        "memo" : 2000,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "picard_metrics" :
+    {
+        "ncore" : 8,
+        "memo" : 3000,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "samtools_idxstats" :
+    {
+        "ncore" : 1,
+        "memo" : 250,
+        "scratch_mem": 2000,
+        "jobtime" : "00:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "wasp_unique" :
+    {
+        "ncore" : 7,
+        "memo" : 3000,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    },
+    "build_index2" :
+    {
+        "ncore" : 6,
+        "memo" : 2000,
+        "scratch_mem": 2000,
+        "jobtime" : "03:59",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "log_folder_new/{rule}_{wildcards.sample}.log"
+    }
+
+    
+}
