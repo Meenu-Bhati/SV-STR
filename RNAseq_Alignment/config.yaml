@@ -1,30 +1,27 @@
 resources:
-  samples: '/cluster/work/pausch/meenu/SV/expression/My_Selected_ids'
-  raw: '/cluster/work/pausch/meenu/SV/expression/Alignement/Raw_reads/'
-  assembly: '/cluster/work/pausch/assemblies/ARS_UCD1.2/ARS_UCD.fasta'
-  # info_file: '/cluster/work/pausch/inputs/ref/BTA/individual_information.csv'
-  sample: '/cluster/work/pausch/meenu/SV/expression/My_Selected_ids'
-  #vcf: '/cluster/work/pausch/meenu/Data_76_124/var_cal/filter_183/75_aniamls_RNAseq/sample_wise_vcf/'
-  vcf: '/cluster/work/pausch/meenu/Data_76_124/var_cal/filter_183/75_animals_RNAseq_imputed/sample_wise_vcf/'
-  genomeDir: '/cluster/work/pausch/inputs/ref/BTA/UCD1.2/ensembl_104/genome_STAR/'
-  sjdbFile: '/cluster/work/pausch/inputs/ref/BTA/UCD1.2/ensembl_104/genome_STAR/Bos_taurus.ARS-UCD1.2.104.chr.gtf' 
+  samples: 'your path/My_Selected_ids' ## sample id of bam file
+  raw: 'your path/Raw_reads/'
+  assembly: 'your path/ARS_UCD1.2/ARS_UCD.fasta'
+  vcf: 'your path/sample_wise_vcf/'
+  genomeDir: 'your path/UCD1.2/ensembl_104/genome_STAR/'
+  sjdbFile: 'your path/genome_STAR/Bos_taurus.ARS-UCD1.2.104.chr.gtf' 
 
 tools:
-  multiqc: "/cluster/work/pausch/audald/software/miniconda3/bin/multiqc"
-  fastp: '/cluster/work/pausch/group_bin/fastp'
-  samtools: '/cluster/work/pausch/alex/software/samtools/samtools'
-  fastq_splitter: '/cluster/work/pausch/audald/software/gdc-fastq-splitter/myenv/bin/gdc-fastq-splitter'
-  sambamba: '/cluster/work/pausch/group_bin/sambamba_v0.6.6'
+  multiqc: "your path/software/miniconda3/bin/multiqc"
+  fastp: 'yourpath/fastp'
+  samtools: 'yourpath//samtools'
+  fastq_splitter: 'yourpath/gdc-fastq-splitter'
+  sambamba: 'yourpath/sambamba_v0.6.6'
   load_picard_tools: "module load picard/2.25.7 \n"
   load_java_jdk: "module load jdk \n"
   load_r: "module load r/3.5.1 \n"
-  picard_tools: 'java -jar /cluster/apps/gcc-4.8.5/picard-2.25.7-krxq7vc5hgwrxwunjcwuefbjuzuvwawq/bin/picard.jar'
+  picard_tools: 'java -jar yourpath/picard.jar'
 
 fold_out:
-  fastp: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/fastp_out/'
-  split_fastq: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/split_fastq/'
-  Alignment: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/star_wasp/'
-  sorted_alignment: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/sorted_alignment/'
-  dedup_alignment: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/dedup_alignment/'
-  metrics: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/metrics/' 
-  wasp_out: '/cluster/work/pausch/meenu/SV/expression/Alignement/new/wasp_filter/'
+  fastp: 'your path/fastp_out/'
+  split_fastq: your path/split_fastq/'
+  Alignment: 'your path/star_wasp/'
+  sorted_alignment: 'your path//sorted_alignment/'
+  dedup_alignment: 'your path//dedup_alignment/'
+  metrics: 'your path/metrics/' 
+  wasp_out: 'your path/wasp_filter/'  ## replace all path with your own.
