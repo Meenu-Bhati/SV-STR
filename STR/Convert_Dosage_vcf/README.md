@@ -40,7 +40,7 @@ bgzip  str_DS_alt_minGT.vcf
 tabix -p str_DS_alt_minGT.vcf.gz
 
 ```
-### 5. Filter STR loci  atleast 80% genotyped and atleast more than 2 DS scores per loci 
+### 5. Filter STR loci  atleast 80% genotyped and >=2 DS scores per loci 
 
 ```
 ## in this study individuals=15
