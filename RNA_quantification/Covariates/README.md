@@ -1,4 +1,4 @@
-## Prepare covariates
+## Prepare covariates for eQTL analyses
 
 Run follwing to commond to get peer 
 
