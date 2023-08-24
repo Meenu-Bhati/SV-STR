@@ -4,11 +4,6 @@
 # In[ ]:
 
 
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 ## script to filter out reads which did not pass WASP filtering
 
 ##vW tag to the SAM output: vW:i:1 means alignment passed WASP  filltering, and all other values mean it did not pass:
