@@ -13,5 +13,5 @@ For DNA sequence alignment workflow, please refer
 ## Citation
 The repository is associated with the https://doi.org/10.1093/genetics/iyad161 publication. 
 
-###Meenu Bhati, Xena Marie Mapel, Audald Lloret-Villas, Hubert Pausch, Structural variants and short tandem repeats impact gene expression and splicing in bovine testis tissue, Genetics, Volume 225, Issue 3, November 2023, iyad161, https://doi.org/10.1093/genetics/iyad161
+"Meenu Bhati, Xena Marie Mapel, Audald Lloret-Villas, Hubert Pausch, Structural variants and short tandem repeats impact gene expression and splicing in bovine testis tissue, Genetics, Volume 225, Issue 3, November 2023, iyad161, https://doi.org/10.1093/genetics/iyad161"
  
