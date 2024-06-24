@@ -3,8 +3,6 @@
 
 This repository contains multiple workflows and scripts pertaining to the identification and genotyping of Structural Variations (SVs) and Short Tandem Repeats (STRs) through the utilization of short-read sequencing data. Additionally, the repository includes scripts and workflows for e/s QTL discovery using SVs and STRs.
 
-Publication: https://doi.org/10.1093/genetics/iyad161
-
 After installing Snakemake and the necessary tools, you can execute all Snakemake workflows by utilizing the "submit***.sh" file in each respective folder. Remember to modify the paths as needed before running the workflows/scripts.
 
 For DNA sequence alignment workflow, please refer 
