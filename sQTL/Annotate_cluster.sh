@@ -8,7 +8,8 @@ sed -i '1s/^/chr\tstart\tend\tpid\tstrand\n/' Top_conditional_joint_all_condi_cl
 ## 2. Annotate
 #exon file format
 #colnames(exon)<-c("chr","start","end","strand","gene_id","gene_name","type")
-# create from python script Correct_Annotation_format_Change
+# create complete annotation from gtf file from python script Correct_Annotation_format_Change.py
+#extract exon from this file
 
 
 Rscript Annontate_introncluster.r \
