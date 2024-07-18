@@ -6,6 +6,10 @@ awk '{ print $1}' Top_conditional_joint_all_condi | sort | uniq | awk -v OFS="\t
 sed -i '1s/^/chr\tstart\tend\tpid\tstrand\n/' Top_conditional_joint_all_condi_cluster_ids
 
 ## 2. Annotate
+#exon file format
+#colnames(exon)<-c("chr","start","end","strand","gene_id","gene_name","type")
+# create from python script Correct_Annotation_format_Change
+
 
 Rscript Annontate_introncluster.r \
 --exon Complete_exon_format.txt --intron Top_conditional_str_condi_cluster_ids --topfile Top_conditional_str_condi_header.txt --outfile Top_conditional_str_condi_all_info.txt
